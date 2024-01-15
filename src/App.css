@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*,
+html {
+  font-family: Poppins;
+}
+
+.animate__animated.animate__fadeIn {
+  --animate-duration: 0.2s;
+}
+
+#root {
+  font-family: Poppins;
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: gray;
+}
+
+::-webkit-scrollbar-track {
+  background-color: lightgray;
+}
+
+/* App.css */
+
+.my-scrollable-div::-webkit-scrollbar {
+  width: 12px;
+}
+
+.my-scrollable-div::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.my-scrollable-div::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* Untuk Firefox */
+.my-scrollable-div {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
